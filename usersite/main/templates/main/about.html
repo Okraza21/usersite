@@ -1,13 +1,9 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Про нас</title>
-</head>
-<body>
+{% extends 'main/layout.html' %}
+
+{% block title %}Про нас{% endblock %}
+
+{% block content %}
+
 <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -34,16 +30,4 @@
     </div>
   </header>
 
-    <h1>Про нас</h1>
-    <p>Информация про нас</p>
-    <address>Контакты</address>
-    <button>Hello</button>
-    <canvas>Hello</canvas>
-    <time>20/05/2022</time>
-
-    <p>
-      <img src="images/car.jpg" alt="Car">
-    </p>
-
-</body>
-</html>
+{% endblock %}
