@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Новости на сайте{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Новости на сайте</h1>
+        <p>{% filter upper %}Automobili Lamborghini S.p.A. - итальянская компания, производитель дорогих спортивных автомобилей под маркой Lamborghini. Находится в коммуне Сант-Агата-Болоньезе, около Болоньи. Компания основана в 1963 году Ферруччо Ламборгини{% endfilter %}</p>
+        <button class="btn btn-warning">На страницу про нас</button>
+        {% for el in values %}
+            {% if el == 'Hello' %}
+                <p>{{ el|upper }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
