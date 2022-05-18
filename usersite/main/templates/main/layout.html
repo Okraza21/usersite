@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 </head>
-<body>
+<body style="background-size: cover; " background="{% static 'main/img/4.jpg' %}">
     <aside>
-        <img src="{% static 'main/img/car.jpg' %}" alt="Car">
-        <span class='logo'>My car</span>
+        <img src="{% static 'main/img/novosti.png' %}" alt="Car">
+        <span class='logo'>My News</span>
         <h3>Навигация</h3>
         <ul>
             <a href="{% url 'home' %}" ><li><i class="bi bi-house-fill"></i>Главная</li></a>
@@ -26,8 +26,8 @@
     </aside>
     <main>
         {% block content %}
-        
         {% endblock %}
+
     </main>
 </body>
 </html>
