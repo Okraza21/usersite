@@ -7,10 +7,10 @@
         <h1>Новости на сайте</h1>
         {% if news %}
             {% for el in news %}
-                <div class='alert alert-warning'>
+                <div class='alert alert-dark'>
                     <h3>{{ el.title }}</h3>
                     <p>{{ el.anons }}</p>
-                    <a href="{% url 'news_detail' el.id %}" class='btn btn-warning'>Читать детальнее</a>
+                    <a href="{% url 'news_detail' el.id %}" class='btn btn-info'>Читать детальнее</a>
                 </div>
             {% endfor %}
         {% else %}

@@ -1,4 +1,5 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 
 {% block title %}Про нас{% endblock %}
 
@@ -16,10 +17,6 @@
           <li><a href="#" class="nav-link px-2 text-white">About</a></li>
         </ul>
 
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Login</button>
           <button type="button" class="btn btn-warning">Sign-up</button>
@@ -29,9 +26,15 @@
   </header>
 
   <div class="features">
-        <h1>Про нас</h1>
-        <p>Automobili Lamborghini S.p.A. - итальянская компания, производитель дорогих спортивных автомобилей под маркой Lamborghini. Находится в коммуне Сант-Агата-Болоньезе, около Болоньи. Компания основана в 1963 году Ферруччо Ламборгини</p>
-        <button class="btn btn-danger">Жмякни</button>
-    </div>
+    <h1>Про нас</h1>
+  </div>
+  <div class="about-foto">
+    <img src="{% static 'main/img/novosti.png' %}" alt="Новости">
+  </div>
+  <div class="about-text">
+    <p>
+        Психотерапевты считают, что большое количество новостей, поступающих из СМИ, может отрицательно влиять на психику, в особенности на психику интровертов. Этот эффект связан с тем, что в новостях, как правило, доминируют негативные сообщения о конфликтах, авариях, несчастных случаях и других проблемах, что может перегружать психику эмоционально восприимчивых людей. Таким людям врачи рекомендуют ограничивать просмотр новостных программ.
+    </p>
+  </div>
 
 {% endblock %}
